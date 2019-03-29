@@ -24,7 +24,7 @@ namespace OnlineBookStore.Controllers
             [HttpPost]
             public IActionResult Login(string username, string password)
             {
-                if (username != null && password != null && username.Equals("admin") && password.Equals("123456"))
+                if (username != null && password != null && username.Equals("admin") && password.Equals("1"))
                 {
                     HttpContext.Session.SetString("uname", username);
                     return View("Home");
