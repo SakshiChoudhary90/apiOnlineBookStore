@@ -12,8 +12,11 @@ namespace apiOnlineBookStoreProject.Models
         public float BookPrice { get; set; }
         public string BookType { get; set; }
         public string BookImage { get; set; }
+        public int AuthorId { get; set; }
         public Author Author { get; set; }
+        public int PublicationId { get; set; }
         public Publication Publication { get; set; }
+        public int BookCategoryId { get; set; }
         public BookCategory BookCategory { get; set; }
     }
 }
