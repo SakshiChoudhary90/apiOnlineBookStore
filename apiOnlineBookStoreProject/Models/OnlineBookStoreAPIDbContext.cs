@@ -8,6 +8,16 @@ namespace apiOnlineBookStoreProject.Models
 {
     public class OnlineBookStoreAPIDbContext : DbContext
     {
+        public OnlineBookStoreAPIDbContext()
+        {
+
+        }
+
+        public OnlineBookStoreAPIDbContext(DbContextOptions<OnlineBookStoreAPIDbContext> options) : base(options)
+        {
+
+        }
+
         public DbSet<Publication> Publications { get; set; }
         public DbSet<Author> Authors { get; set; }
         public DbSet<AuthorBiography> AuthorBiographies { get; set; }
